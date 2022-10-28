@@ -1,4 +1,6 @@
-﻿namespace DEINT_Ej1_Operaciones
+﻿using System;
+
+namespace DEINT_Ej1_Operaciones
 {
     partial class Form1
     {
@@ -33,14 +35,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbNum1 = new System.Windows.Forms.NumericUpDown();
             this.tbNum2 = new System.Windows.Forms.NumericUpDown();
-            this.tbResultado = new System.Windows.Forms.NumericUpDown();
             this.btnSumar = new System.Windows.Forms.Button();
             this.btnRestar = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.tbResultado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbNum1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNum2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbResultado)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,14 +85,6 @@
             this.tbNum2.Size = new System.Drawing.Size(179, 20);
             this.tbNum2.TabIndex = 4;
             // 
-            // tbResultado
-            // 
-            this.tbResultado.Enabled = false;
-            this.tbResultado.Location = new System.Drawing.Point(150, 216);
-            this.tbResultado.Name = "tbResultado";
-            this.tbResultado.Size = new System.Drawing.Size(179, 20);
-            this.tbResultado.TabIndex = 5;
-            // 
             // btnSumar
             // 
             this.btnSumar.Location = new System.Drawing.Point(378, 37);
@@ -100,7 +93,7 @@
             this.btnSumar.TabIndex = 6;
             this.btnSumar.Text = "Sumar";
             this.btnSumar.UseVisualStyleBackColor = true;
-            this.btnSumar.Click += new System.EventHandler(this.btnClick);
+            this.btnSumar.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnRestar
             // 
@@ -110,7 +103,7 @@
             this.btnRestar.TabIndex = 7;
             this.btnRestar.Text = "Restar";
             this.btnRestar.UseVisualStyleBackColor = true;
-            this.btnRestar.Click += new System.EventHandler(this.btnClick);
+            this.btnRestar.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnMultiplicar
             // 
@@ -120,7 +113,7 @@
             this.btnMultiplicar.TabIndex = 8;
             this.btnMultiplicar.Text = "Multiplicar";
             this.btnMultiplicar.UseVisualStyleBackColor = true;
-            this.btnMultiplicar.Click += new System.EventHandler(this.btnClick);
+            this.btnMultiplicar.Click += new System.EventHandler(this.BtnClick);
             // 
             // btnLimpiar
             // 
@@ -130,18 +123,26 @@
             this.btnLimpiar.TabIndex = 9;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnClick);
+            this.btnLimpiar.Click += new System.EventHandler(this.BtnClick);
+            // 
+            // tbResultado
+            // 
+            this.tbResultado.Enabled = false;
+            this.tbResultado.Location = new System.Drawing.Point(150, 215);
+            this.tbResultado.Name = "tbResultado";
+            this.tbResultado.Size = new System.Drawing.Size(179, 20);
+            this.tbResultado.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(488, 277);
+            this.Controls.Add(this.tbResultado);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.btnRestar);
             this.Controls.Add(this.btnSumar);
-            this.Controls.Add(this.tbResultado);
             this.Controls.Add(this.tbNum2);
             this.Controls.Add(this.tbNum1);
             this.Controls.Add(this.label3);
@@ -151,7 +152,6 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.tbNum1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbNum2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbResultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,11 +164,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown tbNum1;
         private System.Windows.Forms.NumericUpDown tbNum2;
-        private System.Windows.Forms.NumericUpDown tbResultado;
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Button btnRestar;
         private System.Windows.Forms.Button btnMultiplicar;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.TextBox tbResultado;
     }
 }
 

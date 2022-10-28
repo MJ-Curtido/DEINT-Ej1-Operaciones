@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEINT-Ej1-Operaciones", "DEINT-Ej1-Operaciones\DEINT-Ej1-Operaciones.csproj", "{3145350D-305A-4DB3-B18F-C130D70FF9B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEINT-Ej2-Cadenas", "DEINT-Ej2-Cadenas\DEINT-Ej2-Cadenas.csproj", "{005995E0-2163-4890-9CCF-7E914507C0CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3145350D-305A-4DB3-B18F-C130D70FF9B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3145350D-305A-4DB3-B18F-C130D70FF9B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3145350D-305A-4DB3-B18F-C130D70FF9B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005995E0-2163-4890-9CCF-7E914507C0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005995E0-2163-4890-9CCF-7E914507C0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005995E0-2163-4890-9CCF-7E914507C0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005995E0-2163-4890-9CCF-7E914507C0CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

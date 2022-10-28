@@ -17,19 +17,37 @@ namespace DEINT_Ej1_Operaciones
             InitializeComponent();
         }
 
-        private void btnClick(Button sender, EventArgs e)
+        private void Calcular(Button btn)
         {
-            /*
-            switch (sender.Name)
+            if (btn.Name == btnSumar.Name)
             {
-                case btnSumar.Name:
-                    Console.WriteLine("hola");
-                    break;
+                Sumar sumar = new Sumar();
 
-                default:
-                    break;
+                tbResultado.Text = "" + sumar.operar((int) tbNum1.Value, (int) tbNum2.Value);
             }
-            */
+            else if (btn.Name == btnRestar.Name)
+            {
+                Restar restar = new Restar();
+
+                tbResultado.Text = "" + restar.operar((int)tbNum1.Value, (int)tbNum2.Value);
+            }
+            else if (btn.Name == btnMultiplicar.Name)
+            {
+                Multiplicar multiplicar = new Multiplicar();
+
+                tbResultado.Text = "" + multiplicar.operar((int)tbNum1.Value, (int)tbNum2.Value);
+            }
+            else
+            {
+                tbNum1.Value = 0;
+                tbNum2.Value = 0;
+                tbResultado.Text = "";
+            }
+        }
+
+        private void BtnClick(object sender, EventArgs e)
+        {
+            Calcular((Button) sender);
         }
     }
 }
